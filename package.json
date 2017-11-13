@@ -18,10 +18,12 @@
   "homepage": "https://github.com/decosblockchain/vtc-esignature-identity#readme",
   "dependencies": {
     "@sendgrid/mail": "^6.1.4",
+    "async": "^2.6.0",
     "bitcoinjs-lib": "^3.3.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "mongodb": "^2.2.33",
+    "request": "^2.83.0",
     "uuid": "^3.1.0"
   }
 }
