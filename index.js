@@ -57,6 +57,9 @@ var sendIdentityTransaction = function(payload, callback) {
         tx.addOutput(ret, 0);
         tx.sign(0, keyPair);
         var txData = tx.build().toHex();
+
+        console.log("Sending transaction:", txData);
+
         request.post({url : backendServer + "sendRawTransaction", body : txData }, (error, response, result) => {
             console.log("Sent identity tx:", result);
             callback();
